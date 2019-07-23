@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Calculos de pesagens de veiculos">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, user-scalable=yes">
+      <meta name="author" content="Kelvin Lopes">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="shortcut icon" href="imgs/icon.png">
+      <title>Pesagem</title>
+   </head>
+   <body>
+      <header class="header">
+         <h1 class="title">Cálculo de pesagem com paletes</h1>
+      </header>
+      <div class="container">
+         <section class="pesagem">
+            <!--onfocus para deixar o calculo em foco disparando na função, onkeyup para aceitar apenas números -->
+            <!--onclick="this.select()"para selcionar automaticamente os números no input ao digitar -->
+            <h2 class="title2">Informe a quantidade de paletes</h2>
+            <input class="input" type="text" value="0" id="qnd-paletes" onblur="calcularPesagem()" onkeyup="onlyNumber (this);" onclick="this.select()">
+         </section>
+         <hr>
+         <section class="pesagem">
+            <h2 class="title2">Informe o peso da balança</h2>
+            <input class="input" type="text" value="0" id="peso-balanca" onblur="calcularPesagem()" onkeyup="onlyNumber (this);" onclick="this.select()">
+         </section>
+         <hr>
+         <section class="pesagem">
+            <h2 class="title2">Informe o peso da minuta</h2>
+            <input class="input" type="text" value="0" id="peso-minuta" onblur="calcularPesagem()" onkeyup="onlyNumber (this);" onclick="this.select()">
+            <!--readonly="true" Não permitido inserir dados manual -->
+            <!--<p onblur="calcularPesagem()" readonly="true" id="resultado"> </p>-->
+            <input class="input pesagem2" type="text" value="0" id="resultado" onblur="calcularPesagem()" disabled>
+         </section>
+         <hr>
+         <div class="pesagem">
+            <input class="input button" type="button" onclick="resetar()" value="Limpar dados">
+            <!--Chama Modal mensagens -->
+            <button id="btn" onblur="calcularPesagem()">Calcular</button>
+         </div>
+         <div class="img">
+            <figure>
+               <picture>
+                  <!--<source media="(min-width:960px)" srcset="imgs/caminhao_2x.gif 2x, imgs/caminhao_1x.gif 1x">-->
+                  <!--<source media="(min-width:750px)" srcset="imgs/caminhao_mobile.gif">-->
+                  <!-- <source media="(min-width:500px)" srcset="imgs/caminhao689.gif">-->
+                  <img src="imgs/truck.png" alt="Caminhão carregando caixas em estera automatica">
+               </picture>
+            </figure>
+         </div>
+      </div>
+      <footer>
+         <div id="modalsobre" class="modalsobre">
+            <div class="content-sobre">
+               <span class="closesobre">&times;</span>
+               <p class="p p-mensagem titlesobre"><strong>Versão 1.1</strong></p>
+               <p class="p-mensagem"><strong class="emoji">✍️</strong></p>
+               <p class="p-mensagem">Agilize os calculos na hora de liberar uma carga!</p>
+               <p class="p-mensagem">Pensado e desenvolvido unicamente para esse objetivo.</p>
+               <p class="p-mensagem titlesobre"><strong>Como usar?</strong></p>
+               <figure>
+                  <img class="img-livro" src="imgs/livro.png" alt="Livro">
+               </figure>
+               <p class="p-mensagem">
+                  Digite a quantidade dos paletes. Caso não tiver, manter o valor zero, ele é usado
+                  para chegarmos no valor final. Informe o peso liquido do ticket de pesagem da balança e
+                  informe o peso da minuta da carga (peso da carga no sistema usado na empresa). Clique em calcular.
+                  Use a tecla tab para mover pelos campos do app ou clique normalmente em cada campo para inserir dados.
+               </p>
+            </div>
+         </div>
+         <div id="sobr">
+            <a id="sobre" href="#"><strong>Sobre</strong></a>
+         </div>
+      </footer>
+      <!--Modal Mensagens-->
+      <div id="modal" class="modal">
+         <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="alert1" class="p-mensagem"><strong class="emoji">⏳</strong> Aguardando dados para o calculo...</p>
+            <p id="alert2" class="p-mensagem"><strong class="emoji">⌨️</strong> Preencha os campos! Se não tiver paletes, informe 0 (zero) para a quantidade de paletes.</p>
+            <p id="alert3" class="p-mensagem"><strong class="emoji">😎</strong>Carga dentro do permitido!</p>
+            <p id="alert4" class="p-mensagem"><strong class="emoji">😱</strong> Alerta! Carga faltante! Avisar expedição!</p>
+            <p id="alert5" class="p-mensagem"><strong class="emoji">😨</strong> Alerta! Carga excedente! Avisar expedição!</p>
+            <p id="alert6" class="p-mensagem"><strong class="emoji">😄</strong>Carga ok!</p>
+            <p id="kgs" class="kg-peso"> </p>
+            <p id="kg-peso">kgs!</p>
+         </div>
+      </div>
+      <!--Modal Digite apenas numeros-->
+      <div id="modaldigitarnum" class="modaldignums" onkeyup="onlyNumber (this);">
+         <div class="modal-content-dignum">
+            <span class="closenum">&times;</span>
+            <p  class="p-mensagem"><strong class="emoji">☘</strong><em>Digite apenas números</em></p>
+         </div>
+      </div>
+      <script src="js/script.js"></script>
+   </body>
+</html>

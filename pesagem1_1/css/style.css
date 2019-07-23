@@ -1,0 +1,495 @@
+@charset "UTF-8";
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');*/
+
+*{
+  box-sizing: border-box;
+  transition: all 1s;
+  line-height: 0.7em;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  
+}
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1em;
+}
+body {
+  margin: 3em;
+  font-family: "Roboto",sans-serif;
+  background-color: #e0f7fa;
+}
+
+.header {
+  width: 100%;
+  max-width: 100vw;
+  text-align: center;
+  margin: 4em 0 0 0;
+}
+
+.title, .title2{
+  text-align: left;
+  /*color: blue;*/
+  color: #006400;
+}
+
+hr {
+
+  border-color: blue;
+  text-align: right;
+  width: 40%;
+  max-width: 40vw;
+  margin: 1em auto 0 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  margin: 4em 0 0 0;
+}
+
+/*Onde estão os inputs text dos valores inseridos*/
+.pesagem{
+  display: flex;
+  width: 80%;
+  max-width: 80vw;
+  flex-direction: column;
+}
+/*Ocultar input resultado*/
+.pesagem2 {
+  display: none;
+}
+/*inputs*/
+.input {
+  width: 50%;
+  max-width: 50vw;
+  flex-direction: row;
+  padding: 0.3em;
+}
+
+input {
+  color: blue;
+  font-size: 1em;
+  border-color: green;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+/*Input em atividade*/
+/*.input input:focus {
+    color: green;
+}*/
+
+.pesagem input:focus {
+    color: #00cccc;
+}
+
+/*Imagem do app*/
+.img {
+  display: inline-flex;
+  /*display: none;*/
+  flex-wrap: wrap;
+  width: 50%;
+  max-width: 50vw;
+  float: left;
+  margin: -20em 2em 2em 35em;
+  padding: 0;
+  position: relative;
+}
+
+.Variante {
+  color: green;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+/* Link Visitado */
+a:visited {
+    color: green;
+}
+
+/* Mouse passa por cima do link */
+a:hover {
+    color: hotpink;
+}
+
+/* Link selecionado */
+a:active {
+    color: blue;
+}
+
+/*Sobre o app modal link*/
+#sobre {
+  width: 100%;
+  max-width: 100vw;
+  margin:2em 17em 2em 0;
+  padding: 0;
+}
+/*Modal mensagens*/
+.modal {
+    display: none; /* Oculto por padrao */
+    position: fixed; /* Fica fixado na posição */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); /* Opacidade */
+}
+
+/* Corpo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% da top centralizado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* 35% dependendo da tela do dispositivo */
+    max-width: 35vw;
+    text-align: center;
+    border-radius: 15px;
+}
+/* Botão para fechar modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Modal sobre o app*/
+.modalsobre {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+/* Corpo modalsobre o app*/
+.content-sobre {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    max-width: 35vw;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.closesobre:hover,
+.closesobre:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Botão Fechar modalSobre o app*/
+.closesobre {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1em;
+    text-align: center;
+    border-radius: 15px;
+}
+/*Botão fechar modal clicar no x*/
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.titlesobre {
+  color: #00cccc;
+}
+/*Modal Digite apenas números*/
+.modaldignums {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+/* Corpo modalsobre o app*/
+.modal-content-dignum {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    max-width: 35vw;
+    text-align: center;
+    border-radius: 15px;
+
+}
+/* Botão Fechar modalSobre o app*/
+.closenum {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1em;
+    text-align: center;
+}
+/*Botão fechar modal clicar no x*/
+.closenum:hover,
+.closenum:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Imagem do libro no modal sobre*/
+.img-livro {
+  width: 40%;
+  max-width: 40vw;
+  margin: 2em 4em 0 auto;
+  padding: 0;
+}
+
+/*Mensagens do modal. Javascript controla qual deve aparecer*/
+#alert1 {
+  display: none;
+}
+
+#alert2 {
+  display: none;
+}
+
+#alert3 {
+  display: none;
+}
+
+#alert4 {
+  display: none;
+}
+
+#alert5 {
+  display: none;
+}
+
+#alert6 {
+  display: none;
+}
+
+#kgs {
+  display: none;
+}
+
+#kg-peso {
+  display: none;
+}
+
+/* Checkbox Hack */
+#toggle-1 {
+   display:none;
+}
+
+/*Paragrafos das mensagens do modal altura de cada linha do texto*/
+.p-mensagem {
+  line-height: 2em;
+}
+/*
+*
+*
+*/
+/*Botão calcular*/
+
+button {
+  color: blue;
+  font-size: 1em;
+  border-color: green;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  flex-direction: row;
+  margin: 2em 0 0 0 ;
+}
+/* Botão Calcular clidado*/
+button:focus {
+    color: yellow;
+}
+
+
+#btn {
+  background-color: green;
+  width: 50%;
+  max-width: 50vw;
+  padding: 0.4em;
+}
+
+.button {
+  margin: 2em 0 0 0;
+}
+/*
+*
+*
+*/
+
+/*Peso innerHTML do modal*/
+#kg-peso {
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+/*Emoji das mensagens do modal para pesagem*/
+.emoji {
+  font-size: 3em;
+}
+
+/*Resposivos dispositivos*/
+@media screen and (max-width:500px){
+
+
+.header {
+  width: 100%;
+  max-width: 100vw;
+  text-align: center;
+  margin: 0;
+  border-radius: 15px;
+}
+
+
+body {
+    background-color: #90F7EC;
+    
+}
+
+.img picture{
+  /*width: 100%;
+  max-width: 100vw;
+  margin: 2em 0 0 -8em;
+  padding: 0;
+  position: relative;*/
+  display: none;
+}
+
+.title {
+    font-size: 1em;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0.2em 0 auto;
+}
+
+.title2{
+    color: blue;
+}
+.input {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0.8em 0 0.8em 0;
+}
+
+
+.container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+hr {
+   width: 100%;
+   max-width: 100vw;    
+  text-align: center;
+  justify-content: center;
+  display: none;
+  
+}
+
+#btn {
+
+    width: 100%;
+    max-width: 100vw;
+}
+
+#sobr {
+    text-align: center;
+    position: relative;
+    margin-right: 0;
+    margin-left: 7em;
+    
+}
+
+.modal-content, .modal-content-dignum {
+    width: 100%;
+    max-width: 100vw;
+    margin: 12em 0 0 0;
+    border-radius: 15px;
+}
+
+.content-sobre {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    border-radius: 15px;
+}
+
+}
+@media screen and (max-width:960px){
+  .img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100vw;
+    float: left;
+    margin: -24em -12em 0 25em;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100vw;
+    margin: 3em -8em 0 0;
+  }
+
+  .img picture {
+    width: 20%;
+    max-width: 20vw;
+  }
+}

@@ -1,0 +1,286 @@
+@charset"uft-8";
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+* {
+	box-sizing: border-box;
+	margin: 0.2em 0.2em 0 0.2em;
+	transition: all 1s;
+	user-select: none;
+	scroll-behavior: smooth; 
+}
+
+body {
+
+    background-color:rgb(236,236,236);
+}
+
+hr {
+    border-color: hotpink;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 3em;
+	box-shadow:0 0 10px #999999;
+    background-color:rgb(255,255,255);
+    border-radius: 2em;
+    overflow-x: hidden;
+}
+
+#mobile-title {
+    display: none;
+    margin: 2em;
+    color: #ffa404;
+    text-align: center;
+}
+
+.border-logo {
+	width: 100%;
+	max-width: 100vw;
+	/*border: solid 1px green;*/
+	
+}
+
+.logo {
+    margin: 0.2em 0 0 2em;
+    width: 40%;
+    max-width: 40vw;
+    padding: 2em;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo:active {
+    transform: rotateY(360deg);
+}
+
+.header {
+	width: 100%;
+	max-width: 100vw;
+	/*border: solid 1px green;*/
+	display: inline-flex;
+	background-color: #000;
+	border-radius: 2em;
+}
+
+.border-header {
+	width: 100%;
+	max-width: 100vw;
+	/*border: solid 1px green;*/
+	display: inline-flex;
+}
+
+.border-container {
+	width: 100%;
+	max-width: 100vw;
+	/*border: solid 1px green;*/
+}
+
+
+.title1 {
+    text-align: left;
+    color: red;
+    max-width: 30%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.title2 {
+    text-align: right;
+    color: red;
+    max-width: 30%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.title1:hover, .title2:hover {
+    transform: scale(1.2);
+    
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.title-h2 {
+    color: #00bfff;
+    text-align: center;
+    font-size: 1.6em;
+    margin: 2em;
+    /*border: solid 1px green;*/
+}
+
+.border-title {
+	width: 70%;
+	max-width: 70vw;
+	/*border: solid 1px green;*/
+	margin: 2em;
+}
+
+.border-img {
+	
+	width: 93.4%;
+	max-width: 93.4vw;
+	/*border: solid 1px green;*/
+	justify-content: center;
+	margin: 2em;
+}
+.contato-social {
+    display: inline-flex;
+    width: 100%;
+    max-width: 100vw;
+    margin: 1.3em auto 0 auto;
+    padding: 0;
+    
+}
+
+.redes-sociais {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 2em auto 0 auto;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  font-size: 1.8em;
+  
+}
+
+.redes-sociais a:link {
+    color: #ffa404;
+    text-decoration: none;
+}
+
+.rede-social a:visited {
+    text-decoration: none;
+    color: #ffa404;
+}
+.redes-sociais a:hover {
+    color: hotpink;
+}
+.redes-sociais a:active {
+    color: green;
+}
+
+.redes-sociais:hover {
+    transform: scale(1.3);
+}
+
+[class*="zocial-"]:hover {
+    transform: scale(1.3);
+}
+.apres-trabalho {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 3em 10em 3em 10em;
+    /*border: solid 1px green;*/
+}
+.paragrafo {
+    text-align: left;
+    font-size: 1.4em;
+    color: black;
+}
+
+.border-footer {
+	width: 100%;
+	max-width: 100vw;
+	/*border: solid 1px green;*/
+	box-shadow:0 0 10px #999999;
+    background-color:rgb(255,255,255);
+    border-radius: 2em;
+}
+
+.footer-p {
+	width: 100%;
+	max-width: 100vw;
+	/*border: solid 1px green;*/
+}
+
+.camisas:hover {
+    transform: scale(1.3);
+}
+
+.endr {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    margin: 2em 6em 2em 6em;
+}
+
+.email {
+    color: #ffa404;;
+}
+.camisas{
+    width: 130px;
+    height: 150px;
+    margin: 4em auto 0 0.6em;
+}
+
+
+@media only screen and (max-width: 870px) {
+
+    #mobile-title {
+    
+        display: block;
+    }
+
+	.border-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	/*.border-container {
+		background-color: #4ABDAC;
+	}*/
+	
+	.logo {
+    width: 80%;
+    max-width: 80vw;
+    align-items: center;
+    margin: 2em auto;
+  
+}
+
+.title1 {
+    display: none;
+}
+
+.title2 {
+    display: none;
+}
+
+.camisas{
+    margin: 2em 0 2em 0;
+}
+
+[class*="zocial-"]:before {
+  flex-shrink: 1;
+}
+.apres-trabalho {
+    
+    margin: 3em auto 3em auto;
+    /*border: solid 1px green;*/
+}
+
+.endr {
+    margin: 3em auto 3em auto;
+}
+
+.footer-p {
+ 
+ padding: 2em;   
+}
+
+}
+
