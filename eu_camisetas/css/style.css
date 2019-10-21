@@ -148,9 +148,9 @@ a:link {
     text-align: center;
 }
 
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
+/* social */
+[class*="social-"]:before {
+  font-family: 'droid sans', sans-serif;
   font-size: 1.8em;
   
 }
@@ -175,7 +175,7 @@ a:link {
     transform: scale(1.3);
 }
 
-[class*="zocial-"]:hover {
+[class*="social-"]:hover {
     transform: scale(1.3);
 }
 .apres-trabalho {
@@ -263,7 +263,7 @@ a:link {
     margin: 2em 0 2em 0;
 }
 
-[class*="zocial-"]:before {
+[class*="social-"]:before {
   flex-shrink: 1;
 }
 .apres-trabalho {
