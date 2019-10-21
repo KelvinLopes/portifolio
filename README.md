@@ -21,6 +21,4 @@ Mostrar minhas habilidades como Front End e me manter em contato com esse maravi
 Link do projeto: <a href = "https://site-prototipo.kelvinlopes.repl.co/" target="_blank">Site Prótotipo</a>
 
 ![Tela do projeto Site prototipo](https://github.com/KelvinLopes/portifolio/blob/master/imgs/Projeto-site-prototipo.png)
-### Como atualizarei?
 
-Na medida que eu fizer um layout diferente ou um projeto que eu ver que seja interessante eu coloquei nesse repositório, aceito feedback. :wink:
