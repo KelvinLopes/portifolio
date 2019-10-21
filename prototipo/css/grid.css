@@ -211,8 +211,7 @@ p {
     justify-content: center;
 }
 /*Img inicial*/
-/*Não tinha background-size nem background-repeat e foi retirado o seletor img ficando apenas a classe, mas tentar ainda
-deixar as imagens responsivas via picture set*/
+/*Imagens responsivas via picture set*/
 .img {
     
     /*display: inline-grid;
