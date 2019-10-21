@@ -13,7 +13,9 @@ Mostrar minhas habilidades como Front End e me manter em contato com esse maravi
 
 ![Tela do projeto eu camisetas](https://github.com/KelvinLopes/portifolio/blob/master/imgs/Projeto-eu-camisetas.png)
 
- Esse mostra uma ideia para trabalhar com camisetas personalizadas ou algo do tipo, o projeto está bem responsivo encaixando em diversos formatos de tela.
+ Esse mostra uma ideia para trabalhar com camisetas personalizadas ou algo do tipo, o projeto está bem responsivo encaixando em  diversos formatos de tela.
+ 
+Link do projeto: <a href = "https://eu-camisetas.kelvinlopes.repl.co/" target="_blank">Eu camisetas</a>
 
 
 ### **_Pesagem 1.1_**
