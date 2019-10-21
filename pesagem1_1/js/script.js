@@ -102,7 +102,6 @@ function calcularPesagem(){
 calcularPesagem();
 resetar();
 //Aceitar apenas números
-//Referência: https://pt.stackoverflow.com/questions/106082/validar-input-para-receber-apenas-n%C3%BAmeros-com-jquery
 function onlyNumber(num) {
 
   // Modal para mensagens dos pesos
