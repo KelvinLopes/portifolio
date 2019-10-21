@@ -25,12 +25,12 @@ Esse projeto eu criei para acelerar processos na hora de liberar uma carga no lo
 Link do projeto: <a href = "https://pesagem.kelvinlopes.repl.co/" target="_blank">Pesagem</a>
 
 
-### **_Site prototipo_**, 
+### **_Site protótipo_** 
 
 ![Tela do projeto Site prototipo](https://github.com/KelvinLopes/portifolio/blob/master/imgs/Projeto-site-prototipo.png)
 
 Foi o primeiro que fiz usando grid e flex-box juntos, com isso consegui um layout bem responsivo respondendo ao máximo a qualquer tipo de tela, não usei consultas media queries, ele tem apenas uma página de exemplo, e as imagens usam o recurso do _HTML picture set_ para mudar o tamanho em cada resolução configurada. Tentei o possível para oferecer a mesma experiência em desktop em um mobile sem modificar a forma que as informações são oferecidas, sem ocultar algo ou mostrar recursos inferior, **isso por uma web mais responsiva.**
 
-Link do projeto: <a href = "https://site-prototipo.kelvinlopes.repl.co/" target="_blank">Site Prótotipo</a>
+Link do projeto: <a href = "https://site-prototipo.kelvinlopes.repl.co/" target="_blank">Site Protótipo</a>
 
 
