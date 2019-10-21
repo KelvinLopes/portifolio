@@ -31,7 +31,6 @@ body {
 
 .title, .title2{
   text-align: left;
-  /*color: blue;*/
   color: #006400;
 }
 
@@ -83,10 +82,7 @@ input {
   text-align: center;
   font-weight: bold;
 }
-/*Input em atividade*/
-/*.input input:focus {
-    color: green;
-}*/
+
 
 .pesagem input:focus {
     color: #00cccc;
