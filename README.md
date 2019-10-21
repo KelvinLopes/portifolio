@@ -17,6 +17,7 @@ Mostrar minhas habilidades como Front End e me manter em contato com esse maravi
 ![Tela do projeto Pesagem](https://github.com/KelvinLopes/portifolio/blob/master/imgs/Projeto-pesagem.png)
 
 **_Site prototipo_**, foi o primeiro que fiz usando grid e flex-box juntos, com isso consegui um layout bem responsivo respondendo ao máximo a qualquer tipo de tela, não usei consultas media queries, ele tem apenas uma página de exemplo, e as imagens usam o recurso do _HTML picture set_ para mudar o tamanho em cada resolução configurada. Tentei o possível para oferecer a mesma experiência em desktop em um mobile sem modificar a forma que as informações são oferecidas, sem ocultar algo ou mostrar recursos inferior, **isso por uma web mais responsiva.**
+
 Link do projeto: https://site-prototipo.kelvinlopes.repl.co/
 
 ![Tela do projeto Site prototipo](https://github.com/KelvinLopes/portifolio/blob/master/imgs/Projeto-site-prototipo.png)
